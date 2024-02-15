@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.D.K.</title>
+    <script src="https://kit.fontawesome.com/76b090af08.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Open Sans', 'sans-serif';
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+        }
+
+        .sect {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .form input {
+            margin: 1em;
+            font-size: 1.5em;
+            padding: 5px 10px;
+        }
+
+        .form input[type="submit"] {
+            color: whitesmoke;
+            background-color: blueviolet;
+            border: 0;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        .celender {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            row-gap: 20px;
+            column-gap: 10px;
+            margin: 100px;
+        }
+
+        .day {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            font-size: 2em;
+            border-radius: 50%;
+        }
+
+        .date {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 216, 168);
+            height: 100px;
+            width: 100px;
+            font-size: 2em;
+            border-radius: 50%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 50px;
+        }
+
+        .food {
+            border: 5px solid blueviolet;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        button {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(255, 216, 168);
+            border: 5px;
+            border-radius: 10px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .row {
+            height: 400px;
+            margin-bottom: 5px;
+        }
+
+        .sr,
+        .tr {
+            display: flex;
+            gap: 5px;
+        }
+
+        .sr>div {
+            flex: 1;
+        }
+
+        .tc {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+        }
+
+        .tc div {
+            height: calc(50% - 5px/2);
+        }
+
+        .sc {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .tr>div {
+            flex: 1;
+        }
+
+        @media screen and (max-width: 576) {
+            flex-direction: column;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media screen and (min-width:577) {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Profile</a>
+                <a href="">News</a>
+                <a href="">Games</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="sect">
+        <form class="form">
+            <h2>Login</h2>
+            <input type="email" name="" id="" placeholder="Email" required>
+            <input type="password" name="" id="" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+    <section>
+        <div class="celender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div style="background-color: lightgray; color: gray;" class="date">30</div>
+            <div style="background-color: lightgray; color: gray;" class="date">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div style="background-color: lightgray; color: gray;" class="date">1</div>
+            <div style="background-color: lightgray; color: gray;" class="date">2</div>
+            <div style="background-color: lightgray; color: gray;" class="date">3</div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="food">
+                <h2>item-1</h2>
+                <h4>price:100</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-2</h2>
+                <h4>price:200</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-3</h2>
+                <h4>price:300</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-4</h2>
+                <h4>price:400</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-5</h2>
+                <h4>price:500</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-6</h2>
+                <h4>price:600</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-7</h2>
+                <h4>price:700</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-8</h2>
+                <h4>price:800</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-9</h2>
+                <h4>price:900</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-10</h2>
+                <h4>price:1000</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-11</h2>
+                <h4>price:1100</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+            <div class="food">
+                <h2>item-12</h2>
+                <h4>price:1200</h4>
+                <button>Ordre now</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit id tempora fugiat quos, ut nostrum
+                    ratione doloribus hic architecto corporis est impedit, maxime nulla explicabo vitae tempore animi
+                    facere? Asperiores.</p>
+            </div>
+        </div>
+    </section>
+    <section class="row">
+        <img src="Gooses/goose1.jpg" alt="">
+    </section>
+    <section class="row sr">
+        <div>
+            <img src="Gooses/goose2.jpg" alt="">
+        </div>
+        <div>
+            <img src="Gooses/goose3.jpg" alt="">
+        </div>
+        <div>
+            <img src="Gooses/goose4.jpg" alt="">
+        </div>
+        <div class="tc">
+            <div>
+                <img src="Hamster/hamster1.jpg" alt="">
+            </div>
+            <div>
+                <img src="Hamster/hamster2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="row tr">
+        <div>
+            <img src="Cats/cat1.jpg" alt="">
+        </div>
+        <div class="sc">
+            <div>
+                <img src="Cats/cat2.jpg" alt="">
+            </div>
+            <div>
+                <img src="Cats/cat2.jpg" alt="">
+            </div>
+            <div>
+                <img src="Cats/cat2.jpg" alt="">
+            </div>
+            <div>
+                <img src="Cats/cat2.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="Cats/cat3.jpg" alt="">
+        </div>
+        <div>
+            <img src="Cats/cat4.jpg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
